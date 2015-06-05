@@ -38,8 +38,8 @@ exports.load = function(req, res, next, quizId){
 // GET /quizes
 exports.index = function(req, res){
   models.Quiz.findAll().then(function(quizes){
-    res.render('quizes/index', {quizes: quizes});
-  }).catch(function(error){next(error);})
+    res.render('quizes/index.ejs', {quizes: quizes});
+  }).catch(function(error){next(error);});
 };
 
 // GET /quizes/:id
@@ -64,7 +64,7 @@ exports.answer = function(req, res){
   })
 */
   var resultado = 'Incorrecto';
-  if(req.query.respuesta===req.quiz.respuesta){
+  if(req.query.respuesta === req.quiz.respuesta){
     resultado = 'Correcto';
   }
   res.render('quizes/answer', {quiz: req.quiz, respuesta: resultado});
