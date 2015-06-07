@@ -70,6 +70,14 @@ exports.answer = function(req, res){
   res.render('quizes/answer', {quiz: req.quiz, respuesta: resultado});
 };
 
+exports.search = function(req, res){
+  var bus = req.query.texto_a_buscar.replace(/ /g,'');
+  models.Quiz.findAll({where: ["pregunta like ?", '%' + bus + '%']}).then(function(quizes){
+    res.render('quizes/search.ejs', {quizes: quizes});
+  }).catch(function(error){next(error);});
+};
+
+
 // GET autor
 exports.author=function(req, res){
   res.render('author');
