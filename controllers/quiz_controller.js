@@ -72,7 +72,7 @@ exports.answer = function(req, res){
 
 exports.search = function(req, res){
   var bus = req.query.texto_a_buscar.replace(/ /g,'');
-  models.Quiz.findAll({where: ["pregunta like ?", '%' + bus + '%']}).then(function(quizes){
+  models.Quiz.findAll({where: ["pregunta like ?", '%' + bus + '%'], order: 'pregunta ASC'}).then(function(quizes){
     res.render('quizes/search.ejs', {quizes: quizes});
   }).catch(function(error){next(error);});
 };
