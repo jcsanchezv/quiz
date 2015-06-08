@@ -3,7 +3,7 @@
     <td>
       <form method="get" action="/quizes/search">
         <label for="texto_a_buscar">Pregunta a buscar:</label>
-        <input type="text" name="texto_a_buscar" value="" placeholder="escriba texto a buscar">
+        <input type="text" id="texto_a_buscar" name="texto_a_buscar" value="" placeholder="escriba texto a buscar">
         <input type="submit" value="Enviar">
       </form>
     </td>
@@ -14,3 +14,4 @@
   </tr>
   <% } %>
 </table>
+<a href="/quizes/new"><button type="button">Crear pregunta</button></a>
