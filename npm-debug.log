@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'method_override@2.3.1' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'method_override@2.3.1', null ]
+6 verbose cache add name=undefined spec="method_override@2.3.1" args=["method_override@2.3.1",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'method_override@2.3.1',
+7 verbose parsed url   path: 'method_override@2.3.1',
+7 verbose parsed url   href: 'method_override@2.3.1' }
+8 verbose cache add name="method_override" spec="2.3.1" args=["method_override","2.3.1"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '2.3.1',
+9 verbose parsed url   path: '2.3.1',
+9 verbose parsed url   href: '2.3.1' }
+10 verbose addNamed [ 'method_override', '2.3.1' ]
+11 verbose addNamed [ '2.3.1', '2.3.1' ]
+12 silly lockFile 8b6352f1-method-override-2-3-1 method_override@2.3.1
+13 verbose lock method_override@2.3.1 /home/xxu/.npm/8b6352f1-method-override-2-3-1.lock
+14 verbose request where is /method_override
+15 verbose request registry https://registry.npmjs.org/
+16 verbose request id 7df2f95ccd8de6f0
+17 verbose url raw /method_override
+18 verbose url resolving [ 'https://registry.npmjs.org/', './method_override' ]
+19 verbose url resolved https://registry.npmjs.org/method_override
+20 verbose request where is https://registry.npmjs.org/method_override
+21 info trying registry request attempt 1 at 20:35:39
+22 http GET https://registry.npmjs.org/method_override
+23 http 404 https://registry.npmjs.org/method_override
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'content-length': '51',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Mon, 08 Jun 2015 18:35:39 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-ams4128-AMS',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1433788539.435379,VS0,VE101' }
+25 silly registry.get cb [ 404,
+25 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'cache-control': 'max-age=0',
+25 silly registry.get     'content-length': '51',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     date: 'Mon, 08 Jun 2015 18:35:39 GMT',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '0',
+25 silly registry.get     connection: 'keep-alive',
+25 silly registry.get     'x-served-by': 'cache-ams4128-AMS',
+25 silly registry.get     'x-cache': 'MISS',
+25 silly registry.get     'x-cache-hits': '0',
+25 silly registry.get     'x-timer': 'S1433788539.435379,VS0,VE101' } ]
+26 silly lockFile 8b6352f1-method-override-2-3-1 method_override@2.3.1
+27 silly lockFile 8b6352f1-method-override-2-3-1 method_override@2.3.1
+28 error 404 404 Not Found: method_override
+28 error 404
+28 error 404 'method_override' is not in the npm registry.
+28 error 404 You should bug the author to publish it
+28 error 404 It was specified as a dependency of 'quiz'
+28 error 404
+28 error 404 Note that you can also install from a
+28 error 404 tarball, folder, or http url, or git url.
+29 error System Linux 3.13.0-53-generic
+30 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "method_override@2.3.1"
+31 error cwd /home/xxu/mis_proyectos/quiz
+32 error node -v v0.10.32
+33 error npm -v 1.4.28
+34 error code E404
+35 verbose exit [ 1, true ]
