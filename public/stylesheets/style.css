@@ -8,3 +8,8 @@ nav{background: #eee;}
 footer{background: #eee; text-align: center;};
 nav span{margin: 0px 10px 0px 0px;}
 #ErrorMsgs{color: #f61; font-size: smaler;}
+#tema{color: blue;}
+.general{text-align: right;}
+#questions{margin: 0 auto;}
+.alinleft{text-align: left;}
+td{margin: 0 2px; padding: 0 2px;}
